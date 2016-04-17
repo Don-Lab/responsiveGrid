@@ -1,0 +1,72 @@
+/*CSS for responsiveGrid.html*/
+
+
+/* navbar */
+		#nav ul {
+			list-style-type: none;
+			padding: 0px;
+			margin: 0px;
+			overflow: hidden;
+			background-color: #000;
+		}
+
+		#nav li {
+			float: left;
+		}
+
+		#nav li a {
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+			display: block;
+			color: #fff;
+		}
+
+		#nav li a:hover {
+			background-color: #ccc;
+		}
+
+		.active {
+			background-color: #FFF;
+			color: #000;
+		}
+
+		/* Responsive Grid- This grid has four columns (quarters) and can make websites fit on multiple platforms*/
+
+
+		 /* box sizing: border-box; has the size of the div stay the same no matter the padding */
+			* {
+				box-sizing: border-box;
+			}
+
+		/* .row:after {content: ""; clear: both; display: block;} crestes class ".row" and prevents the divs from cutting each other out the row*/
+			.row:after {
+				content: "";
+				clear: both;
+				display: block;
+			}
+
+			/* these classes define the size (percent so it can be responsive) and keep the content to the left with a padding of 15px (will not affect size of div because of .row) */
+			.quart {
+				width: 25%;
+				float: left;
+				padding: 15px;
+			}
+
+			.half {
+				width: 50%;
+				float: left;
+				padding: 15px;
+			}
+
+			.triquart {
+				width: 75%;
+				float: left;
+				padding: 15px;
+			}
+
+			.full {
+				width: 100%;
+				float: left;
+				padding: 15px;
+			}
